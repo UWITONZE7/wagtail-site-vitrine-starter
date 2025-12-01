@@ -23,12 +23,12 @@
 
     .about-text p {
         font-size: 0.95rem;
-        color: #4b5563;
+        color:black;
         margin-bottom: 0.75rem;
     }
 
     .about-image-card {
-        background: white;
+        background: black;
         border-radius: 1.5rem;
         padding: 1.5rem;
         border: 1px solid #e5e7eb;
@@ -70,6 +70,7 @@
         <!-- Titre et sous-titre depuis le modèle AboutPage -->
         <h1 class="section-title">
             {{ page.intro_title|default:"À propos" }}
+            <body style="background-color:palevioletred;"></body>
         </h1>
         <p class="section-subtitle">
             {{ page.intro_subtitle|default:"Utilisez cette page pour présenter votre histoire, vos valeurs et votre vision." }}
