@@ -21,7 +21,7 @@
     }
 
     .service-card-full {
-        background: white;
+        background: palevioletred;
         border-radius: 1rem;
         padding: 1.5rem;
         border: 1px solid #e5e7eb;
@@ -34,13 +34,13 @@
 
     .service-card-full p {
         font-size: 0.95rem;
-        color: #4b5563;
+        color: palevioletred;
         margin-bottom: 0.75rem;
     }
 
     .service-features {
         font-size: 0.9rem;
-        color: #6b7280;
+        color: palegreen;
         margin-left: 1.1rem;
     }
 
@@ -72,6 +72,7 @@
         <!-- Titre et sous-titre venant du modèle -->
         <h1 class="section-title">
             {{ page.intro_title|default:"Nos services" }}
+            <body style="background-color:powderblue;"></body>
         </h1>
         <p class="section-subtitle">
             {{ page.intro_subtitle|default:"Retrouvez ici la liste complète des services proposés." }}
@@ -117,7 +118,7 @@
                     {% endif %}
                 {% endfor %}
             {% else %}
-                <p style="color:#6b7280; font-size:0.95rem; margin-top:1.5rem;">
+                <p style="color:purple; font-size:0.95rem; margin-top:1.5rem;">
                     Aucun service n’a encore été ajouté. Vous pouvez créer vos services dans l’admin Wagtail pour les voir apparaître ici.
                 </p>
             {% endif %}
